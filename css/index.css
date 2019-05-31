@@ -171,3 +171,48 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* CSS for About Page */
+.about-top {
+    margin-top: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-top p {
+    margin-bottom: 20px;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main-body-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 40px;
+}
+
+.main-body-boxes button {
+    border: 2px solid black;
+    border-radius: 7px;
+    color: black;
+    height: 35px;
+    background: white;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.main-body-boxes h3 {
+    margin-top: 10px;
+}
+
+.about-btm {
+    margin-bottom: 25px;
+}
