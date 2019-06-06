@@ -71,10 +71,37 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:last-child {
+    margin-right: 30px;
+}
+
+.header-img {
+    margin-top: 40px;
+}
+
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
@@ -112,6 +139,47 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:first-child {
+    background: teal;
+}
+
+.middle-content .boxes .box:nth-child(2) {
+    background: gold;
+}
+
+.middle-content .boxes .box:nth-child(3) {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4) {
+    background: coral;
+}
+
+.middle-content .boxes .box:nth-child(5) {
+    background: crimson;
+}
+
+.middle-content .boxes .box:nth-child(6) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:last-child {
+    background: dodgerblue;
+}
+
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +211,158 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* CSS for About Page */
+.about-top {
+    margin-top: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.about-top p {
+    margin-bottom: 20px;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main-body-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin-bottom: 40px;
+}
+
+.main-body-boxes button {
+    border: 2px solid black;
+    border-radius: 7px;
+    color: black;
+    height: 35px;
+    background: white;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.main-body-boxes h3 {
+    margin-top: 10px;
+}
+
+.about-btm {
+    margin-bottom: 25px;
+}
+
+@media(max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    header nav a:last-child {
+        margin-right: 0;
+    }
+
+    .boxes {
+        flex-wrap: wrap;
+
+    }
+
+    .box {
+        min-width: 100px;
+    }
+
+    footer nav {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main-body-boxes button {
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 500px) {
+ 
+    .container {
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: middle;
+        margin-bottom: 10px;
+        height: 100px;
+        justify-content: space-around;
+      
+    }
+
+
+    .nav-img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .top-content {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .text-container {
+        justify-content: center;
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .boxes {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        height: 800px;
+    }
+
+    .box {
+        margin: 0;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .main-body {
+        flex-direction: column;
+    }
+
+    .main-body-boxes {
+        width: 100%;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    
+
+
 }
